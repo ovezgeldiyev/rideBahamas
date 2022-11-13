@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700 family=Montserrat&family=Nunito&display=swap" rel="stylesheet"/> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Work+Sans:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <title>Home</title>
   </head>
@@ -17,60 +20,160 @@
       <div class="auto__container">
         <div class="header__inner">
           <div class="header__inner-logo">
-            <img src="./images/logo.svg" alt="" />
+            <img src="./images/logo.png" alt="" />
           </div>
-          <nav class="nav">
-            <ul class="nav__inner">
-              <li>
-                <a href="#">
-                
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <div class="header__inner-buttons">
+            <a href="#"> Sign up to Drive </a>
+            <a href="#" class="button primary"> Login </a>
+          </div>
         </div>
       </div>
     </header>
     <!-- header end
     =========================================== -->
     <main>
-    <!-- hero start
+      <!-- intro start
     =========================================== -->
-    <section class="hero" >
-      <div class="auto__container">
-        <div class="hero__inner">
-          
+      <section class="intro">
+        <div class="auto__container">
+          <div class="intro__inner">
+            <div class="intro__inner-content">
+              <h1>
+                Request a <strong>Ride Now,</strong> via
+                <strong>Whatsapp</strong>
+              </h1>
+              <form action="" class="intro__inner-form">
+                <div class="intro__inner-form-inputs">
+                  <div class="input">
+                    <input type="text" placeholder="Enter Pickup Location" />
+                    <span>
+                      <img src="./images/icons/location.svg" alt="" />
+                    </span>
+                  </div>
+                  <button type="button">
+                    <img src="./images/icons/exchange.svg" alt="" />
+                  </button>
+                  <div class="input">
+                    <input type="text" placeholder="Enter Destination" />
+                    <span class="big">
+                      <img src="./images/icons/destination.svg" alt="" />
+                    </span>
+                  </div>
+                </div>
+                <div class="input number">
+                  <div class="input__country">
+                    <div class="input__country-icon">
+                      <img src="./images/bahamas.png" alt="" />
+                    </div>
+                    <span> +1 </span>
+                  </div>
+                  <input type="num" placeholder="23 7628037 35121" />
+                </div>
+                <button class="button primary" type="submit">
+                  Request Now
+                </button>
+              </form>
+            </div>
+            <div class="intro__inner-image">
+              <img src="./images/intro.jpg" alt="" />
+            </div>
+          </div>
         </div>
-      </div>
-      
-    </section>
-    <!-- hero end
+      </section>
+      <!-- intro end
     =========================================== -->
-    <!-- intro start
+      <!-- info start
     =========================================== -->
-    <section class="intro">
-      <div class="auto__container">
-        <div class="intro__inner">
-         
+      <section class="info">
+        <div class="auto__container">
+          <div class="info__inner">
+            <div class="info__inner-content">
+              <h2>
+                <strong>Finding a taxi</strong> hasn't been
+                <strong>easier</strong>
+              </h2>
+              <p>
+                We have partnered with more than 560 leading taxi companies and
+                individual drivers to offer you the best possible experience.
+                Finding your taxi now is lot easier.
+              </p>
+              <a href="#" class="button secondary">
+                Learn More
+              </a>
+            </div>
+            <div class="info__inner-banner">
+              <div class="info__inner-banner-wrapper">
+              </div>
+              <div class="info__inner-banner-image">
+                <img src="./images/info-1.png" alt="">
+              </div>
+              <div class="info__inner-banner-image">
+                <img src="./images/info-2.png" alt="">
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- intro end
+      </section>
+      <!-- info end
     =========================================== -->
-    <!-- footer start
+      <!-- info start
     =========================================== -->
-    <footer class="footer">
-      <div class="auto__container">
-
-      </div>
-    </footer>
-    <!-- footer end
+      <section class="info second">
+        <div class="auto__container">
+          <div class="info__inner">
+            <div class="info__inner-content">
+              <h2>
+                Making taxi <strong>more social</strong>
+              </h2>
+              <p>
+                We are changing how taxi work. By bringing it closer 
+                to theirs customers. Requesting a taxi via whatsapp,
+                simple for both sides. 
+              </p>
+              <a href="#" class="button secondary">
+                Request Taxi Now
+              </a>
+            </div>
+            <div class="info__inner-banner">
+              <div class="info__inner-banner-image">
+                <img src="./images/info-3.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- info end
+    =========================================== -->
+      <!-- app start
+    =========================================== -->
+      <section class="app">
+        <div class="auto__container">
+          <div class="app__inner"></div>
+        </div>
+      </section>
+      <!-- app end
+    =========================================== -->
+      <!-- reviews start
+    =========================================== -->
+      <section class="reviews">
+        <div class="auto__container">
+          <div class="reviews__innner"></div>
+        </div>
+      </section>
+      <!-- reviews end
+    =========================================== -->
+      <!-- footer start
+    =========================================== -->
+      <footer class="footer">
+        <div class="auto__container"></div>
+      </footer>
+      <!-- footer end
     =========================================== -->
     </main>
 
     <!-- Sprites
     =========================================== -->
-        <!-- <svg>
+    <!-- <svg>
       <use xlink:href="#voice"></use>
     </svg> -->
     <svg style="display: none">
