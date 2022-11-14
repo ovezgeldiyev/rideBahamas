@@ -724,6 +724,7 @@ main {
 }
 .info.second {
   padding: 0;
+  margin-bottom: 300px;
 }
 .info.second .info__inner {
   background-color: #FBFAF3;
@@ -771,11 +772,11 @@ main {
           align-items: center;
 }
 .info__inner-content {
-  width: calc(50% - 20px);
+  width: calc(50% - 40px);
   max-width: 760px;
 }
 .info__inner-banner {
-  width: calc(50% - 20px);
+  width: calc(50% - 40px);
   max-width: 716px;
   background-color: #171405;
   border-radius: 40px;
@@ -805,7 +806,7 @@ main {
 .info__inner-banner-image {
   position: absolute;
   bottom: -7%;
-  left: -10%;
+  left: -8%;
   width: 60%;
   padding-bottom: 77%;
   display: -webkit-box;
@@ -882,10 +883,23 @@ main {
   .intro__inner-form {
     padding: 36px 40px 60px;
   }
+
+  .info {
+    padding: 160px 0;
+  }
+  .info.second .info__inner {
+    padding: 130px 30px 90px 30px;
+    background-color: aqua;
+  }
 }
 @media (max-width: 1250px) {
   main {
     margin-top: 140px;
+  }
+
+  h1, h2 {
+    font-size: 50px;
+    line-height: 60px;
   }
 
   .header__inner-logo {
@@ -906,8 +920,13 @@ main {
 }
 @media (max-width: 1180px) {
   h1, h2 {
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 46px;
+    line-height: 56px;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 45px;
   }
 
   .auto__container {
@@ -920,6 +939,35 @@ main {
   .intro__inner-form-inputs {
     margin-bottom: 30px;
   }
+  .intro__inner-form .button {
+    width: 60%;
+    padding: 16px 40px;
+  }
+
+  .info {
+    padding: 120px 0;
+  }
+  .info.second .info__inner {
+    padding: 90px 30px 70px;
+  }
+  .info.second .info__inner-content {
+    width: calc(50% - 25px);
+  }
+  .info.second .info__inner-banner {
+    width: calc(50% - 25px);
+  }
+  .info__inner-content {
+    width: calc(50% - 30px);
+  }
+  .info__inner-banner {
+    width: calc(50% - 30px);
+  }
+  .info__inner h2 {
+    margin-bottom: 30px;
+  }
+  .info__inner p {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 1024px) {
   ::-webkit-scrollbar {
@@ -931,8 +979,13 @@ main {
     line-height: 50px;
   }
 
+  p {
+    font-size: 20px;
+    line-height: 38px;
+  }
+
   main {
-    margin-top: 90px;
+    margin-top: 110px;
   }
 
   .header__inner {
@@ -951,15 +1004,26 @@ main {
   }
 
   .intro__inner-content {
-    padding: 30px 35px 80px 35px;
+    padding: 20px 25px 55px 25px;
     border-radius: 30px;
     border-bottom-right-radius: 0;
   }
   .intro__inner-form {
-    padding: 20px 20px 40px;
+    padding: 18px 18px 35px;
+    border-radius: 14px;
   }
   .intro__inner-form-inputs {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+  }
+  .intro__inner-form-inputs button {
+    width: 32px;
+    height: 32px;
+  }
+  .intro__inner-form .button {
+    width: 50%;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 14px 20px;
   }
   .intro__inner-image img {
     border-top-right-radius: 30px;
@@ -968,10 +1032,137 @@ main {
   .intro__inner h1 {
     margin-bottom: 20px;
   }
+  .intro__inner .input {
+    min-height: 55px;
+    margin-bottom: 14px;
+  }
+  .intro__inner .input.number input {
+    width: calc(74% + 4px);
+  }
+  .intro__inner .input input {
+    padding: 17px 40px 17px 20px;
+  }
+  .intro__inner .input > span {
+    right: 14px;
+  }
+  .intro__inner .input__country {
+    padding: 15px 10px 15px 12px;
+    width: 26%;
+  }
+  .intro__inner .input__country-icon {
+    margin-right: 9px;
+  }
+
+  .info {
+    padding: 90px 0;
+  }
+  .info__inner-content {
+    width: calc(50% - 25px);
+  }
+  .info__inner-banner {
+    width: calc(50% - 25px);
+    border-radius: 30px;
+  }
+  .info__inner-banner-image {
+    border-radius: 30px;
+    left: -6%;
+  }
+  .info__inner-banner-image:last-child {
+    right: 6%;
+  }
+  .info__inner-banner-image img {
+    border-radius: 30px;
+  }
+  .info__inner h2 {
+    margin-bottom: 20px;
+  }
+  .info__inner p {
+    margin-bottom: 30px;
+  }
+  .info__inner .button {
+    width: 100%;
+    max-width: 300px;
+    padding: 18px 40px;
+  }
+}
+@media (max-width: 930px) {
+  h1, h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  .button {
+    border-radius: 10px;
+  }
+
+  .intro__inner-content {
+    padding: 18px 20px 50px;
+  }
+  .intro__inner-form {
+    padding: 15px 15px 28px;
+  }
+  .intro__inner-form-inputs {
+    margin-bottom: 14px;
+  }
+  .intro__inner-form .button {
+    font-size: 15px;
+    line-height: 17px;
+    padding: 12px 10px;
+  }
+  .intro__inner .input {
+    min-height: 48px;
+  }
+  .intro__inner .input > span {
+    width: 22px;
+    height: 22px;
+  }
+  .intro__inner .input > span.big {
+    width: 25px;
+    height: 25px;
+  }
+  .intro__inner h1 {
+    margin-bottom: 15px;
+  }
+
+  .info {
+    padding: 70px 0;
+  }
+  .info.second .info__inner {
+    padding: 70px 20px 40px;
+    border-radius: 50px;
+  }
+  .info.second .info__inner-content {
+    width: calc(50% - 20px);
+  }
+  .info.second .info__inner-banner {
+    width: calc(50% - 20px);
+  }
+  .info__inner h2 {
+    margin-bottom: 10px;
+  }
+  .info__inner p {
+    margin-bottom: 20px;
+  }
+  .info__inner .button {
+    padding: 13px 25px;
+    max-width: 250px;
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 @media (max-width: 750px) {
   .auto__container {
     padding: 0 20px;
+  }
+
+  h1, h2 {
+    font-size: 30px;
+    line-height: 40px;
   }
 
   .header__inner-logo {
@@ -985,6 +1176,266 @@ main {
     margin-left: 20px;
     padding: 9px 26px;
     border-radius: 10px;
+  }
+
+  .intro__inner-content {
+    width: 60%;
+  }
+  .intro__inner-image {
+    width: 44%;
+  }
+
+  .info.second .info__inner-content {
+    width: 100%;
+    max-width: unset;
+  }
+  .info.second .info__inner-banner {
+    width: 100%;
+    max-width: unset;
+    margin-bottom: 30px;
+  }
+  .info__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info__inner-content {
+    width: 95%;
+    max-width: unset;
+  }
+  .info__inner-banner {
+    width: 95%;
+    max-width: unset;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    padding-bottom: 96%;
+    margin-bottom: 60px;
+  }
+  .info__inner-banner-image {
+    left: -4%;
+    bottom: -5%;
+  }
+  .info__inner-banner-image:last-child {
+    right: 4%;
+    top: -6%;
+  }
+}
+@media (max-width: 650px) {
+  .intro__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .intro__inner-content {
+    width: 100%;
+    max-width: unset;
+    border-radius: 20px;
+    padding: 30px 40px 60px;
+  }
+  .intro__inner-form {
+    padding: 25px 25px 35px;
+  }
+  .intro__inner-image {
+    width: 100%;
+    max-width: unset;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 0 0 20px 0;
+    border-radius: 20px;
+  }
+  .intro__inner-image img {
+    border-radius: 20px;
+    max-height: 400px;
+  }
+  .intro__inner .input__country {
+    max-width: unset;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .intro__inner .input input {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .intro__inner .input input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .intro__inner .input input::-moz-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .intro__inner .input input:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .intro__inner .input input::-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .intro__inner .input input::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .info {
+    padding: 60px 0 40px;
+  }
+  .info__inner-banner {
+    border-radius: 20px;
+  }
+  .info__inner-banner-image img {
+    border-radius: 20px;
+  }
+}
+@media (max-width: 540px) {
+  p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  main {
+    margin-top: 80px;
+  }
+
+  .header__inner-logo {
+    width: 120px;
+  }
+  .header__inner-buttons a {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .header__inner-buttons .button {
+    margin-left: 10px;
+    padding: 8px 20px;
+  }
+
+  .intro {
+    padding: 0;
+  }
+  .intro__inner-content {
+    padding: 18px 20px 50px;
+  }
+  .intro__inner-form {
+    padding: 15px 15px 30px;
+  }
+  .intro__inner-image {
+    margin-bottom: 12px;
+  }
+  .intro__inner-image img {
+    max-height: 300px;
+  }
+}
+@media (max-width: 440px) {
+  .intro__inner-form-inputs {
+    margin-bottom: 10px;
+  }
+  .intro__inner-form-inputs button {
+    width: 28px;
+    height: 28px;
+  }
+  .intro__inner-form-inputs button img {
+    width: 12px;
+    height: 14px;
+  }
+  .intro__inner-form .button {
+    font-size: 13px;
+    line-height: 15px;
+    padding: 10px 10px;
+  }
+  .intro__inner-image img {
+    max-height: 240px;
+  }
+  .intro__inner .input {
+    margin-bottom: 10px;
+    min-height: 42px;
+  }
+  .intro__inner .input__country {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .intro__inner .input > span {
+    width: 20px;
+    height: 20px;
+    right: 9px;
+  }
+  .intro__inner .input > span.big {
+    width: 23px;
+    height: 23px;
+  }
+  .intro__inner .input input {
+    font-size: 13px;
+    line-height: 15px;
+    padding: 12px 35px 12px 15px;
+  }
+  .intro__inner .input input::-webkit-input-placeholder {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .intro__inner .input input::-moz-placeholder {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .intro__inner .input input:-ms-input-placeholder {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .intro__inner .input input::-ms-input-placeholder {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .intro__inner .input input::placeholder {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .info__inner-banner {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 390px) {
+  h1, h2 {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .auto__container {
+    padding: 0 12px;
+  }
+
+  main {
+    margin-top: 60px;
+  }
+
+  .header__inner {
+    padding: 14px 0;
+  }
+  .header__inner-logo {
+    width: 110px;
+  }
+  .header__inner-buttons a {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .header__inner-buttons .button {
+    margin-left: 10px;
+    padding: 6px 17px;
+  }
+
+  .intro__inner .input__country {
+    padding: 10px 7px 10px;
+  }
+  .intro__inner .input__country-icon {
+    width: 26px;
+    height: 26px;
   }
 }
 @media (max-width: 1560px) {
@@ -1135,6 +1586,10 @@ h2 {
   .intro__inner-form-inputs {
     margin-bottom: 30px;
   }
+  .intro__inner-form .button {
+    width: 60%;
+    padding: 16px 40px;
+  }
 
   .app__inner {
     padding: 130px 0 80px;
@@ -1236,15 +1691,26 @@ h2 {
   }
 
   .intro__inner-content {
-    padding: 30px 35px 80px 35px;
+    padding: 20px 25px 55px 25px;
     border-radius: 30px;
     border-bottom-right-radius: 0;
   }
   .intro__inner-form {
-    padding: 20px 20px 40px;
+    padding: 18px 18px 35px;
+    border-radius: 14px;
   }
   .intro__inner-form-inputs {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+  }
+  .intro__inner-form-inputs button {
+    width: 32px;
+    height: 32px;
+  }
+  .intro__inner-form .button {
+    width: 50%;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 14px 20px;
   }
   .intro__inner-image img {
     border-top-right-radius: 30px;
@@ -1252,6 +1718,26 @@ h2 {
   }
   .intro__inner h1 {
     margin-bottom: 20px;
+  }
+  .intro__inner .input {
+    min-height: 55px;
+    margin-bottom: 14px;
+  }
+  .intro__inner .input.number input {
+    width: calc(74% + 4px);
+  }
+  .intro__inner .input input {
+    padding: 17px 40px 17px 20px;
+  }
+  .intro__inner .input > span {
+    right: 14px;
+  }
+  .intro__inner .input__country {
+    padding: 15px 10px 15px 12px;
+    width: 26%;
+  }
+  .intro__inner .input__country-icon {
+    margin-right: 9px;
   }
 
   .app__inner {
@@ -1321,6 +1807,35 @@ h2 {
   h3 {
     font-size: 30px;
     line-height: 38px;
+  }
+
+  .intro__inner-content {
+    padding: 18px 20px 50px;
+  }
+  .intro__inner-form {
+    padding: 15px 15px 28px;
+  }
+  .intro__inner-form-inputs {
+    margin-bottom: 14px;
+  }
+  .intro__inner-form .button {
+    font-size: 15px;
+    line-height: 17px;
+    padding: 12px 10px;
+  }
+  .intro__inner .input {
+    min-height: 48px;
+  }
+  .intro__inner .input > span {
+    width: 22px;
+    height: 22px;
+  }
+  .intro__inner .input > span.big {
+    width: 25px;
+    height: 25px;
+  }
+  .intro__inner h1 {
+    margin-bottom: 15px;
   }
 
   .app__inner {
@@ -1480,9 +1995,17 @@ h2 {
     border-radius: 10px;
   }
 
+  .intro__inner-content {
+    width: 60%;
+  }
+  .intro__inner-image {
+    width: 44%;
+  }
+
   .app__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 80px 0;
   }
   .app__inner-banner {
     width: 100%;
@@ -1518,7 +2041,7 @@ h2 {
   }
 
   .reviews {
-    padding-top: 210px;
+    padding-top: 30%;
   }
   .reviews__inner {
     -ms-flex-wrap: wrap;
@@ -1549,7 +2072,82 @@ h2 {
     text-align: center;
   }
 }
+@media (max-width: 650px) {
+  .intro__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .intro__inner-content {
+    width: 100%;
+    max-width: unset;
+    border-radius: 20px;
+    padding: 30px 40px 60px;
+  }
+  .intro__inner-form {
+    padding: 25px 25px 35px;
+  }
+  .intro__inner-image {
+    width: 100%;
+    max-width: unset;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 0 0 20px 0;
+    border-radius: 20px;
+  }
+  .intro__inner-image img {
+    border-radius: 20px;
+    max-height: 400px;
+  }
+  .intro__inner .input__country {
+    max-width: unset;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .intro__inner .input input {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .intro__inner .input input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .intro__inner .input input::-moz-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .intro__inner .input input:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .intro__inner .input input::-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .intro__inner .input input::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
 @media (max-width: 540px) {
+  .intro {
+    padding: 0;
+  }
+  .intro__inner-content {
+    padding: 18px 20px 50px;
+  }
+  .intro__inner-form {
+    padding: 15px 15px 30px;
+  }
+  .intro__inner-image {
+    margin-bottom: 12px;
+  }
+  .intro__inner-image img {
+    max-height: 300px;
+  }
+
   .app__inner-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1582,6 +2180,68 @@ h2 {
   h3 {
     font-size: 20px;
     line-height: 26px;
+  }
+
+  .intro__inner-form-inputs {
+    margin-bottom: 10px;
+  }
+  .intro__inner-form-inputs button {
+    width: 28px;
+    height: 28px;
+  }
+  .intro__inner-form-inputs button img {
+    width: 12px;
+    height: 14px;
+  }
+  .intro__inner-form .button {
+    font-size: 13px;
+    line-height: 15px;
+    padding: 10px 10px;
+  }
+  .intro__inner-image img {
+    max-height: 240px;
+  }
+  .intro__inner .input {
+    margin-bottom: 10px;
+    min-height: 42px;
+  }
+  .intro__inner .input__country {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .intro__inner .input > span {
+    width: 20px;
+    height: 20px;
+    right: 9px;
+  }
+  .intro__inner .input > span.big {
+    width: 23px;
+    height: 23px;
+  }
+  .intro__inner .input input {
+    font-size: 13px;
+    line-height: 15px;
+    padding: 12px 35px 12px 15px;
+  }
+  .intro__inner .input input::-webkit-input-placeholder {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .intro__inner .input input::-moz-placeholder {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .intro__inner .input input:-ms-input-placeholder {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .intro__inner .input input::-ms-input-placeholder {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .intro__inner .input input::placeholder {
+    font-size: 13px;
+    line-height: 15px;
   }
 
   .app p {
