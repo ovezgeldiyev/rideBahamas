@@ -179,12 +179,8 @@ main {
   border: 1px solid #D6D6D6;
   position: relative;
   border-radius: 5px;
-  margin-bottom: 20px;
   min-height: 65px;
   background-color: #fff;
-}
-.input.number {
-  margin: 20px 0 0 0;
 }
 .input.number input {
   width: calc(76% + 4px);
@@ -363,6 +359,8 @@ main {
           align-items: center;
 }
 .header__inner-buttons a {
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 500;
   font-family: "Work Sans", sans-serif;
   color: #000;
@@ -424,8 +422,7 @@ main {
   background-color: #171405;
   position: relative;
   z-index: 3;
-  padding: 95px 75px 65px 80px;
-  min-height: 830px;
+  padding: 95px 35px 120px 80px;
   max-width: 918px;
 }
 .intro__inner-content::before {
@@ -462,6 +459,7 @@ main {
 }
 .intro__inner-form-inputs {
   position: relative;
+  margin-bottom: 40px;
 }
 .intro__inner-form-inputs button {
   position: absolute;
@@ -494,15 +492,24 @@ main {
   width: 14px;
   height: 16px;
 }
+.intro__inner-form-inputs .input:last-child {
+  margin-bottom: 0;
+}
 .intro__inner-form .button {
   position: absolute;
-  width: 100%;
+  width: 70%;
   max-width: 340px;
   left: 50%;
   top: calc(100% - 15px);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   font-weight: 700;
+}
+.intro__inner-form .input {
+  margin-bottom: 20px;
+}
+.intro__inner-form .input.number {
+  margin-bottom: 0;
 }
 .intro__inner-image {
   display: -webkit-box;
@@ -516,13 +523,15 @@ main {
           align-items: center;
   width: 48%;
   margin-left: -4%;
+  border-radius: 40px;
 }
 .intro__inner-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   -o-object-fit: cover;
-  border-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 .intro__inner h1 {
   margin-bottom: 50px;
@@ -663,8 +672,136 @@ main {
   font-family: "Work Sans", sans-serif;
 }
 
+@media (max-width: 1560px) {
+  .intro__inner-content {
+    padding: 65px 50px 100px 50px;
+  }
+  .intro__inner h1 {
+    margin-bottom: 35px;
+  }
+
+  h1, h2 {
+    font-size: 65px;
+    line-height: 80px;
+  }
+}
+@media (max-width: 1450px) {
+  h1, h2 {
+    font-size: 60px;
+    line-height: 75px;
+  }
+}
+@media (max-width: 1380px) {
+  h1, h2 {
+    font-size: 55px;
+    line-height: 65px;
+  }
+
+  .intro__inner-form {
+    padding: 36px 40px 60px;
+  }
+}
+@media (max-width: 1250px) {
+  main {
+    margin-top: 140px;
+  }
+
+  .header__inner-logo {
+    width: 200px;
+  }
+  .header__inner-buttons a {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .header__inner-buttons .button {
+    margin-left: 50px;
+    padding: 15px 40px;
+  }
+
+  .intro__inner-content {
+    padding: 40px 40px 90px 40px;
+  }
+}
+@media (max-width: 1180px) {
+  h1, h2 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .auto__container {
+    padding: 0 30px;
+  }
+
+  .intro__inner-form {
+    padding: 30px 20px 50px;
+  }
+  .intro__inner-form-inputs {
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 1024px) {
   ::-webkit-scrollbar {
     display: none;
+  }
+
+  h1, h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  main {
+    margin-top: 90px;
+  }
+
+  .header__inner {
+    padding: 20px 0;
+  }
+  .header__inner-logo {
+    width: 180px;
+  }
+  .header__inner-buttons a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .header__inner-buttons .button {
+    margin-left: 30px;
+    padding: 12px 30px;
+  }
+
+  .intro__inner-content {
+    padding: 30px 35px 80px 35px;
+    border-radius: 30px;
+    border-bottom-right-radius: 0;
+  }
+  .intro__inner-form {
+    padding: 20px 20px 40px;
+  }
+  .intro__inner-form-inputs {
+    margin-bottom: 20px;
+  }
+  .intro__inner-image img {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .intro__inner h1 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 750px) {
+  .auto__container {
+    padding: 0 20px;
+  }
+
+  .header__inner-logo {
+    width: 160px;
+  }
+  .header__inner-buttons a {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .header__inner-buttons .button {
+    margin-left: 20px;
+    padding: 9px 26px;
+    border-radius: 10px;
   }
 }

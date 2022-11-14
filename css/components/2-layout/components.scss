@@ -95,11 +95,9 @@ main {
     border: 1px solid #D6D6D6;
     position: relative;
     border-radius: 5px;
-    margin-bottom: 20px;
     min-height: 65px;
     background-color: $white;
     &.number {
-        margin: 20px 0 0 0;
         input {
             width: calc(76% + 4px);
             left: unset;
