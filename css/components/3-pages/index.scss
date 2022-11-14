@@ -10,8 +10,7 @@
             background-color: $main;
             position: relative;
             z-index: 3;
-            padding: 95px 75px 65px 80px;
-            min-height: 830px;
+            padding: 95px 35px 120px 80px;
             max-width: 918px;
             &::before {
                 content: "";
@@ -40,6 +39,7 @@
             flex-direction: column;
             &-inputs {
                 position: relative;
+                margin-bottom: 40px;
                 button {
                     position: absolute;
                     top: 50%;
@@ -64,15 +64,26 @@
                         height: 16px;
                     }
                 }
+                .input {
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
             }
             .button {
                 position: absolute;
-                width: 100%;
+                width: 70%;
                 max-width: 340px;
                 left: 50%;
                 top: calc(100% - 15px);
                 transform: translateX(-50%);
                 font-weight: 700;
+            }
+            .input {
+                margin-bottom: 20px;
+                &.number {
+                    margin-bottom: 0;
+                }
             }
          
         }
@@ -82,38 +93,94 @@
             align-items: center;
             width: 48%;
             margin-left: -4%;
+            border-radius: 40px;
             img {
                 @include fullImage;
-                border-radius: 40px;
+                border-top-right-radius: 40px;
+                border-bottom-right-radius: 40px;
+
             }
+        }
+        .input {
+
         }
         h1 {
             margin-bottom: 50px;
         }
     }
 }
+// 1560px
+@mixin intro-xxxxxlg-xxxxxxlg {
+    .intro {
+        &__inner {
+            &-content {
+                padding: 65px 50px 100px 50px;
+
+            }
+            h1 {
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
 // 1380px
 @mixin intro-xxxlg-xxxxlg {
     .intro {
-
+        &__inner {
+            &-form {
+                padding: 36px 40px 60px;
+            }
+        }
     }
 }
 // 1250px
 @mixin intro-xlg-xxlg-extra {
     .intro {
-
+        &__inner {
+            &-content {
+                padding: 40px 40px 90px 40px;
+            }
+        }
     }
 }
 // 1180px
 @mixin intro-xlg-xxlg {
     .intro {
-
+        &__inner {
+            &-form {
+                padding: 30px 20px 50px;
+                &-inputs {
+                    margin-bottom: 30px;
+                }
+            }
+        }
     }
 }
 // 1024px
 @mixin intro-lg-xlg {
     .intro {
-
+        &__inner {
+            &-content {
+                padding: 30px 35px 80px 35px;
+                border-radius: 30px;
+                border-bottom-right-radius: 0;
+            }
+            &-form {
+                padding: 20px 20px 40px;
+                &-inputs {
+                    margin-bottom: 20px;
+                }
+            }
+            &-image {
+                img {
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                }
+            }
+            h1 {
+                margin-bottom: 20px;
+            }
+        }
     }
 }
 // 930px

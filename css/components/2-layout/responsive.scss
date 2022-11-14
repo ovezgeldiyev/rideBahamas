@@ -1,17 +1,47 @@
+// 1560px
+@include xxxxxlg-xxxxxxlg {
+    @include intro-xxxxxlg-xxxxxxlg;
+    h1, h2 {
+        font-size: 65px;
+        line-height: 80px;
+    }
+}
 // 1450px
 @include xxxxlg-xxxxxlg {
     // @include intro-xxxxlg-xxxxxlg;
+    h1, h2 {
+        font-size: 60px;
+        line-height: 75px;
+    }
 }
 // 1380px
 @include xxxlg-xxxxlg {
+    h1, h2 {
+        font-size: 55px;
+        line-height: 65px;
+    }
     @include intro-xxxlg-xxxxlg;
+
 }
 // 1250px
 @include xlg-xxlg-extra {
+    main {
+        margin-top: 140px;
+    }
+    @include header-xlg-xxlg-extra;
     @include intro-xlg-xxlg-extra;
+
 }
 // 1180px
 @include xlg-xxlg {
+    h1, h2 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .auto__container {
+        padding: 0 30px;
+    }
+    
     @include intro-xlg-xxlg;
 }
 // 1024px
@@ -19,6 +49,15 @@
     ::-webkit-scrollbar{
         display: none;
     }
+    h1, h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    main {
+        margin-top: 90px;
+    }
+    @include header-lg-xlg;
+
     @include intro-lg-xlg;
 }
 // 930px
@@ -27,6 +66,10 @@
 }
 // 750px
 @include sm-md {
+    .auto__container {
+        padding: 0 20px;
+    }
+    @include header-sm-md;
     @include intro-sm-md;
 }
 // 650px
