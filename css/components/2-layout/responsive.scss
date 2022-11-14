@@ -20,8 +20,15 @@
         font-size: 55px;
         line-height: 65px;
     }
+    p {
+        &.sm {
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
     @include intro-xxxlg-xxxxlg;
     @include info-xxxlg-xxxxlg;
+    @include footer-xxxlg-xxxxlg;
 
 }
 // 1250px
@@ -67,6 +74,10 @@
     p {
         font-size: 20px;
         line-height: 38px;
+        &.sm {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
     main {
         margin-top: 110px;
@@ -74,6 +85,7 @@
     @include header-lg-xlg;
     @include intro-lg-xlg;
     @include info-lg-xlg;
+    @include footer-lg-xlg;
 
 }
 // 930px
@@ -119,17 +131,31 @@
     p {
         font-size: 16px;
         line-height: 30px;
+        &.sm {
+            font-size: 14px;
+            line-height: 22px;
+        }
     }
     main {
         margin-top: 80px;
     }
     @include header-xsm-sm;
     @include intro-xsm-sm;
+    @include info-xsm-sm;
+    @include footer-xsm-sm;
+
 }
 // 440px
 @include xxsm-xsm  {
+    p {
+        &.sm {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
     @include intro-xxsm-xsm;
     @include info-xxsm-xsm;
+    @include footer-xxsm-xsm;
 
 }
 // 390px
@@ -150,6 +176,7 @@
     }
     @include header-xxxsm-xxsm;
     @include intro-xxxsm-xxsm;
+    @include info-xxxsm-xxsm;
 
 }
 

@@ -406,7 +406,6 @@
     padding: 200px 0;
     &.second {
         padding: 0;
-        margin-bottom: 300px;
         .info__inner {
             background-color: #FBFAF3;
             border-radius: 60px;
@@ -523,12 +522,6 @@
         }
     }
 }
-// 1560px
-@mixin info-xxxxxlg-xxxxxxlg {
-    .info {
-
-    }
-}
 // 1380px
 @mixin info-xxxlg-xxxxlg {
     .info {
@@ -536,17 +529,11 @@
         &.second {
             .info__inner {
                 padding: 130px 30px 90px 30px;
-                background-color: aqua;
             }
         }
     }
 }
-// 1250px
-@mixin info-xlg-xxlg-extra {
-    .info {
-   
-    }
-}
+
 // 1180px
 @mixin info-xlg-xxlg {
     .info {
@@ -651,12 +638,16 @@
     .info {
         &.second {
             .info__inner {
+                padding: 80px 30px 40px;
+                align-items: flex-start;
+                border-radius: 40px;
+
                 &-content {
                     width: 100%;
                     max-width: unset;
                 }
                 &-banner {
-                    width: 100%;
+                    width: 96%;
                     max-width: unset;
                     margin-bottom: 30px;
                 }
@@ -673,7 +664,7 @@
                 max-width: unset;
                 order: -1;
                 padding-bottom: 96%;
-                margin-bottom: 60px;
+                margin-bottom: 80px;
                 &-image {
                     left: -4%;
                     bottom: -5%;
@@ -693,6 +684,8 @@
         &__inner {
             &-banner {
                 border-radius: 20px;
+                margin-bottom: 60px;
+
                 &-image {
                     img {
                         border-radius: 20px;
@@ -705,7 +698,15 @@
 // 540px
 @mixin info-xsm-sm {
     .info {
-      
+        &.second {
+            .info__inner {
+                padding: 50px 20px 30px;
+                border-radius: 30px;
+                &-banner {
+                    margin-bottom: 20px;
+                }
+            }
+        }
     }
 }
 // 440px
@@ -721,6 +722,20 @@
 // 390px
 @mixin info-xxxsm-xxsm {
     .info {
-
+        &.second {
+            .info__inner {
+                padding: 40px 15px 26px;
+                border-radius: 20px;
+                &-banner {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .button {
+            padding: 10px 20px;
+            max-width: 210px;
+            font-size: 16px;
+            line-height: 19px;
+        }
     }
 }

@@ -37,19 +37,11 @@ h3 {
     }
 }
 
-h4 {
-
-}
-
-h5 {
-
-}
-
-h6 {
-
-}
 p {
-
+    &.sm {
+        font-size: 22px;
+        line-height: 45px;
+    }
 }
 main {
     overflow: hidden;
