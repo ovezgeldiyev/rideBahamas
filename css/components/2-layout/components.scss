@@ -69,7 +69,7 @@ main {
         font-weight: 600;
         padding: 24px 80px;
         color: $black;
-        background-color: $white;
+        background-color: transparent;
         border: 2px solid $primary;
     }
     &.uniq {
@@ -100,13 +100,12 @@ main {
     }
     &__country {
         position: absolute;
-        top: 0;
+        top: 50%;
         left: 0;
         width: 24%;
         height: 100%;
-        max-width: 116px;
-        background-color: #D6D6D6;
-        z-index: 3;
+        background-color: #eeeeee;
+        z-index: 1;
         display: flex;
         align-items: center;
         border-top-left-radius: 5px;
@@ -116,6 +115,12 @@ main {
         line-height: 22px;
         font-weight: 500;
         color: $main;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: .2s ease;
+        &:hover {
+            opacity: .8;
+        }
         &-icon {
             display: flex;
             justify-content: center;
@@ -161,6 +166,11 @@ main {
         top: 50%;
         right: 24px;
         transform: translateY(-50%);
+        transition: .2s ease;
+        cursor: pointer;
+        &:hover {
+            opacity: .8;
+        }
         &.big {
             width: 30px;
             height: 30px;

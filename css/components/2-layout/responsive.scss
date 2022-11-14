@@ -1,182 +1,298 @@
 // 1560px
 @include xxxxxlg-xxxxxxlg {
     @include intro-xxxxxlg-xxxxxxlg;
-    h1, h2 {
+    @include app-xxxxxlg-xxxxxxlg;
+
+    h1,
+    h2 {
         font-size: 65px;
         line-height: 80px;
     }
+
+    h3 {
+        font-size: 50px;
+        line-height: 60px;
+    }
 }
+
 // 1450px
 @include xxxxlg-xxxxxlg {
-    // @include intro-xxxxlg-xxxxxlg;
-    h1, h2 {
+
+    h1,
+    h2 {
         font-size: 60px;
         line-height: 75px;
     }
+
+    h3 {
+        font-size: 45px;
+        line-height: 55px;
+    }
 }
+
 // 1380px
 @include xxxlg-xxxxlg {
-    h1, h2 {
+
+    h1,
+    h2 {
         font-size: 55px;
         line-height: 65px;
     }
+
+    h3 {
+        font-size: 43px;
+        line-height: 50px;
+    }
+
     p {
         &.sm {
             font-size: 20px;
             line-height: 32px;
         }
     }
+
     @include intro-xxxlg-xxxxlg;
     @include info-xxxlg-xxxxlg;
+    @include app-xxxlg-xxxxlg;
     @include footer-xxxlg-xxxxlg;
 
 }
+
 // 1250px
 @include xlg-xxlg-extra {
     main {
         margin-top: 140px;
     }
-    h1, h2 {
+
+    h1,
+    h2 {
         font-size: 50px;
         line-height: 60px;
     }
+
+    h3 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
     @include header-xlg-xxlg-extra;
     @include intro-xlg-xxlg-extra;
-
+    @include app-xlg-xxlg-extra;
+    @include reviews-xlg-xxlg-extra;
 }
+
 // 1180px
 @include xlg-xxlg {
-    h1, h2 {
+
+    h1,
+    h2 {
         font-size: 46px;
         line-height: 56px;
     }
+
+    h3 {
+        font-size: 37px;
+        line-height: 45px;
+    }
+
     p {
         font-size: 22px;
         line-height: 45px;
     }
+
     .auto__container {
         padding: 0 30px;
     }
-    
+
     @include intro-xlg-xxlg;
     @include info-xlg-xxlg;
-
+    @include app-xlg-xxlg;
+    @include reviews-xlg-xxlg;
 }
+
 // 1024px
 @include lg-xlg {
-    ::-webkit-scrollbar{
+    ::-webkit-scrollbar {
         display: none;
     }
-    h1, h2 {
+
+    h1,
+    h2 {
         font-size: 40px;
         line-height: 50px;
     }
+
+    h3 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
     p {
         font-size: 20px;
         line-height: 38px;
+
         &.sm {
             font-size: 16px;
             line-height: 24px;
         }
     }
+
     main {
         margin-top: 110px;
     }
+
     @include header-lg-xlg;
     @include intro-lg-xlg;
     @include info-lg-xlg;
+    @include app-lg-xlg;
+    @include reviews-lg-xlg;
     @include footer-lg-xlg;
-
 }
+
 // 930px
 @include md-lg {
-    h1, h2 {
+
+    h1,
+    h2 {
         font-size: 35px;
         line-height: 45px;
     }
+
+    h3 {
+        font-size: 30px;
+        line-height: 38px
+    }
+
     p {
         font-size: 18px;
         line-height: 34px;
     }
+
     .button {
         border-radius: 10px;
     }
+
     @include intro-md-lg;
     @include info-md-lg;
+    @include app-md-lg;
+    @include reviews-md-lg;
+}
+
+// 840px
+@include md-lg-extra {
+    h3 {
+        font-size: 27px;
+        line-height: 34px;
+    }
+
+    @include app-md-lg-extra;
+    @include reviews-md-lg-extra;
 
 }
+
 // 750px
 @include sm-md {
     .auto__container {
         padding: 0 20px;
     }
-    h1, h2 {
+
+    h1,
+    h2 {
         font-size: 30px;
         line-height: 40px;
+    }
+
+    h3 {
+        font-size: 25px;
+        line-height: 31px;
     }
 
     @include header-sm-md;
     @include intro-sm-md;
     @include info-sm-md;
-
+    @include app-sm-md;
+    @include reviews-sm-md;
 }
+
 // 650px
 @include sm-md-extra {
     @include intro-sm-md-extra;
     @include info-sm-md-extra;
 
 }
+
 // 540px
-@include xsm-sm  {
+@include xsm-sm {
     p {
         font-size: 16px;
         line-height: 30px;
+
         &.sm {
             font-size: 14px;
             line-height: 22px;
         }
     }
+
     main {
         margin-top: 80px;
     }
+
     @include header-xsm-sm;
     @include intro-xsm-sm;
     @include info-xsm-sm;
+    @include app-xsm-sm;
+    @include reviews-xsm-sm;
     @include footer-xsm-sm;
 
 }
+
 // 440px
-@include xxsm-xsm  {
+@include xxsm-xsm {
+    h3 {
+        font-size: 20px;
+        line-height: 26px
+    }
+
     p {
         &.sm {
             font-size: 12px;
             line-height: 20px;
         }
     }
+
     @include intro-xxsm-xsm;
     @include info-xxsm-xsm;
+    @include app-xxsm-xsm;
+    @include reviews-xxsm-xsm;
     @include footer-xxsm-xsm;
 
 }
+
 // 390px
-@include xxxsm-xxsm  {
-    h1, h2 {
+@include xxxsm-xxsm {
+
+    h1,
+    h2 {
         font-size: 25px;
         line-height: 32px;
     }
+
     p {
         font-size: 14px;
         line-height: 26px;
     }
+
     .auto__container {
         padding: 0 12px;
     }
+
     main {
         margin-top: 60px;
     }
+
     @include header-xxxsm-xxsm;
     @include intro-xxxsm-xxsm;
     @include info-xxxsm-xxsm;
+    @include reviews-xxxsm-xxsm;
 
 }
-
