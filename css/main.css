@@ -402,6 +402,10 @@ main {
           align-items: center;
 }
 
+.app__inner-info h2 {
+  margin-bottom: 13px;
+}
+
 .intro {
   padding-bottom: 35px;
 }

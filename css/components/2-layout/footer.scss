@@ -27,3 +27,13 @@
  
     }
 }
+
+.app{
+    &__inner{
+        &-info{
+            h2{
+                margin-bottom: 13px;
+            }
+        }
+    }
+}
