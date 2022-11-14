@@ -340,6 +340,9 @@ main {
           animation-name: sticky;
   -webkit-animation-duration: 0.4s;
           animation-duration: 0.4s;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 8px 18px 0px #00000030;
+          box-shadow: 0px 8px 18px 0px #00000030;
 }
 .header__inner {
   padding: 30px 0;
