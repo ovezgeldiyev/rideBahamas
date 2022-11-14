@@ -108,8 +108,43 @@
 // 540px
 @mixin header-xsm-sm {
     .header {
-    
+      &__inner {
+        &-logo {
+          width: 120px;
+        }
+        &-buttons {
+          a {
+            font-size: 12px;
+            line-height: 14px;
+          }
+          .button {
+            margin-left: 10px;
+            padding: 8px 20px;
+          }
+        }
+      }
     }
+}
+// 390px
+@mixin header-xxxsm-xxsm {
+  .header {
+    &__inner {
+      padding: 14px 0;
+      &-logo {
+        width: 110px;
+      }
+      &-buttons {
+        a {
+          font-size: 10px;
+          line-height: 12px;
+        }
+        .button {
+          margin-left: 10px;
+          padding: 6px 17px;
+        }
+      }
+    }
+  }
 }
 @keyframes sticky {
     0% {

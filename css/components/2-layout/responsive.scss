@@ -21,12 +21,17 @@
         line-height: 65px;
     }
     @include intro-xxxlg-xxxxlg;
+    @include info-xxxlg-xxxxlg;
 
 }
 // 1250px
 @include xlg-xxlg-extra {
     main {
         margin-top: 140px;
+    }
+    h1, h2 {
+        font-size: 50px;
+        line-height: 60px;
     }
     @include header-xlg-xxlg-extra;
     @include intro-xlg-xxlg-extra;
@@ -35,14 +40,20 @@
 // 1180px
 @include xlg-xxlg {
     h1, h2 {
-        font-size: 48px;
-        line-height: 58px;
+        font-size: 46px;
+        line-height: 56px;
+    }
+    p {
+        font-size: 22px;
+        line-height: 45px;
     }
     .auto__container {
         padding: 0 30px;
     }
     
     @include intro-xlg-xxlg;
+    @include info-xlg-xxlg;
+
 }
 // 1024px
 @include lg-xlg {
@@ -53,39 +64,92 @@
         font-size: 40px;
         line-height: 50px;
     }
+    p {
+        font-size: 20px;
+        line-height: 38px;
+    }
     main {
-        margin-top: 90px;
+        margin-top: 110px;
     }
     @include header-lg-xlg;
-
     @include intro-lg-xlg;
+    @include info-lg-xlg;
+
 }
 // 930px
 @include md-lg {
+    h1, h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 34px;
+    }
+    .button {
+        border-radius: 10px;
+    }
     @include intro-md-lg;
+    @include info-md-lg;
+
 }
 // 750px
 @include sm-md {
     .auto__container {
         padding: 0 20px;
     }
+    h1, h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
     @include header-sm-md;
     @include intro-sm-md;
+    @include info-sm-md;
+
 }
 // 650px
 @include sm-md-extra {
     @include intro-sm-md-extra;
+    @include info-sm-md-extra;
+
 }
 // 540px
 @include xsm-sm  {
+    p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    main {
+        margin-top: 80px;
+    }
+    @include header-xsm-sm;
     @include intro-xsm-sm;
 }
 // 440px
 @include xxsm-xsm  {
     @include intro-xxsm-xsm;
+    @include info-xxsm-xsm;
+
 }
 // 390px
 @include xxxsm-xxsm  {
-    // @include intro-xxxsm-xxsm;
+    h1, h2 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .auto__container {
+        padding: 0 12px;
+    }
+    main {
+        margin-top: 60px;
+    }
+    @include header-xxxsm-xxsm;
+    @include intro-xxxsm-xxsm;
+
 }
 
