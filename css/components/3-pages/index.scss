@@ -1267,7 +1267,6 @@
 
 .reviews {
     padding: 110px 0 180px;
-
     &__inner {
         display: flex;
         align-items: center;
@@ -1352,6 +1351,7 @@
                 right: -2px;
                 transform: translateY(-50%);
                 height: calc(100% + 4px);
+                color: $white;
                 &:hover {
                     opacity: .9;
                 }

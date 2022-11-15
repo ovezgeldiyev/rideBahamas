@@ -915,6 +915,7 @@ main {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   height: calc(100% + 4px);
+  color: #fff;
 }
 .reviews__inner form .button:hover {
   opacity: 0.9;
